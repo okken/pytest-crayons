@@ -10,8 +10,8 @@ pip install pytest-crayons
 
 ## Usage
 
-Include a color fixture in the param list of a test. 
-Then use it instead of `print`.
+1. Include a color fixture in the param list of a test. 
+2. Then use it instead of `print`.
 
 ```python
 def test_something(blue):
