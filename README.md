@@ -20,9 +20,19 @@ def test_something(blue):
     ... # more test code
 ```
 
+Just like normal print statements, you only see the output if:
+
+* There's an failure in the test.
+* or you pass in `-s` or `--capture=no`
+* or you wrap the statement in a `with capsys.disabled():` block.
+
+For our examples, we'll use `-s`:
+
+![output of test_something](docs/test_blue.png)
+
 ## Available colors
 
-* red
+* red, 
 * green
 * yellow
 * blue
@@ -42,8 +52,4 @@ def test_colors(red, green, yellow, blue, magenta, cyan):
     cyan("this should be in cyan")
 ```
 
-<!-->
-Shows up like this:
-
-TODO: fill in this with a screen shot
--->
+![output of test_colors](docs/test_example.png)
