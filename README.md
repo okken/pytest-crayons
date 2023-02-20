@@ -28,7 +28,7 @@ Just like normal print statements, you only see the output if:
 
 For our examples, we'll use `-s`:
 
-![output of test_something](docs/test_blue.png)
+![output of test_something](https://github.com/okken/pytest-crayons/blob/main/docs/test_blue.png?raw=true)
 
 ## Available colors
 
@@ -52,4 +52,4 @@ def test_colors(red, green, yellow, blue, magenta, cyan):
     cyan("this should be in cyan")
 ```
 
-![output of test_colors](docs/test_example.png)
+![output of test_colors](https://github.com/okken/pytest-crayons/blob/main/docs/test_example.png?raw=true)
