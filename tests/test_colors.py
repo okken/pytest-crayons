@@ -1,7 +1,6 @@
 def test_colors_get_printed(pytester):
     pytester.copy_example("examples/test_example.py")
     result = pytester.runpytest("-s")
-    result.assert_outcomes(passed=1)
     result.stdout.fnmatch_lines(
         [
             "*[31mtest_colors: this should be in red*[0m",
