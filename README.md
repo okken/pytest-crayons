@@ -53,3 +53,7 @@ def test_colors(red, green, yellow, blue, magenta, cyan):
 ```
 
 ![output of test_colors](https://github.com/okken/pytest-crayons/blob/main/docs/test_example.png?raw=true)
+
+## This was partly generated as a demo for a talk for PyCascades 2023
+
+I'll post a link to the talk when it's available.
