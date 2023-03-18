@@ -15,7 +15,7 @@ pip install pytest-crayons
 
 ```python
 def test_magenta(magenta):
-    blue("this should be blue")
+    blue("this should be magenta")
 ```
 
 Just like normal print statements, you only see the output if:
@@ -30,7 +30,7 @@ For our examples, we'll use `-s`:
 
 ## Available colors
 
-* red, 
+* red 
 * green
 * yellow
 * blue
@@ -42,12 +42,12 @@ Example with all colors:
 ```python
 def test_colors(red, green, yellow, blue, magenta, cyan):
     print("") # for the newline
-    red("this should be in red")
-    green("this should be in green")
-    yellow("this should be in yellow")
-    blue("this should be in blue")
-    magenta("this should be in magenta")
-    cyan("this should be in cyan")
+    red("this should be red")
+    green("this should be green")
+    yellow("this should be yellow")
+    blue("this should be blue")
+    magenta("this should be magenta")
+    cyan("this should be cyan")
 ```
 
 ![output of test_colors](https://github.com/okken/pytest-crayons/blob/main/docs/test_example.png?raw=true)
