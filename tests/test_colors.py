@@ -1,13 +1,16 @@
 def test_colors_get_printed(pytester):
     pytester.copy_example("examples/test_example.py")
+    pytester.makepyfile(__init__ = "")
     result = pytester.runpytest("-s")
+    result.assert_outcomes(passed=1)
+    bold, reset  = '\x1b[1m', '\x1b[0m'
     result.stdout.fnmatch_lines(
         [
-            "*[31mtest_colors: this should be in red*[0m",
-            "*[32mtest_colors: this should be in green*[0m",
-            "*[33mtest_colors: this should be in yellow*[0m",
-            "*[34mtest_colors: this should be in blue*[0m",
-            "*[35mtest_colors: this should be in magenta*[0m",
-            "*[36mtest_colors: this should be in cyan*[0m",
+            f"*{bold}\x1b[31mtest_colors: this should be in red{reset}",
+            f"*{bold}\x1b[32mtest_colors: this should be in green{reset}",
+            f"*{bold}\x1b[33mtest_colors: this should be in yellow{reset}",
+            f"*{bold}\x1b[34mtest_colors: this should be in blue{reset}",
+            f"*{bold}\x1b[35mtest_colors: this should be in magenta{reset}",
+            f"*{bold}\x1b[36mtest_colors: this should be in cyan{reset}",
         ],
     )

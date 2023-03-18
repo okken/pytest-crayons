@@ -1,8 +1,13 @@
 [run]
 branch = True
+include = 
+  pytest_crayons.py
+  examples/*
+  tests/*
+  .tox/*/lib/*/site-packages/pytest_crayons.py
 
 [paths]
 source =
-   src/pytest_crayons
-   .tox/*/lib/*/site-packages/pytest_crayons
+   src
+   .tox/*/lib/*/site-packages
 

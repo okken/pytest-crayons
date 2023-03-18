@@ -14,10 +14,8 @@ pip install pytest-crayons
 2. Then use it instead of `print`.
 
 ```python
-def test_something(blue):
-    ... # some code
-    blue("a print statement, that shows up blue")
-    ... # more test code
+def test_magenta(magenta):
+    blue("this should be blue")
 ```
 
 Just like normal print statements, you only see the output if:
@@ -28,7 +26,7 @@ Just like normal print statements, you only see the output if:
 
 For our examples, we'll use `-s`:
 
-![output of test_something](https://github.com/okken/pytest-crayons/blob/main/docs/test_blue.png?raw=true)
+![output of test_something](https://github.com/okken/pytest-crayons/blob/main/docs/magenta.png?raw=true)
 
 ## Available colors
 
@@ -54,6 +52,6 @@ def test_colors(red, green, yellow, blue, magenta, cyan):
 
 ![output of test_colors](https://github.com/okken/pytest-crayons/blob/main/docs/test_example.png?raw=true)
 
-## This was partly generated as a demo for a talk for PyCascades 2023
+## This was included in a talk for PyCascades 2023
 
-I'll post a link to the talk when it's available.
+* Conference talk page : [Sharing is Caring - Sharing pytest Fixtures](https://2023.pycascades.com/program/talks/sharing-is-caring-sharing-pytest-fixtures/)
