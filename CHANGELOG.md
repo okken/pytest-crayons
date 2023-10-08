@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.7 
+
+### Internal Changes
+
+- mods to release process
+
 ## 0.0.6 
 
 ### Internal Changes
