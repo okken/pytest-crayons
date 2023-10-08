@@ -1,12 +1,12 @@
 [project]
 name = "pytest-crayons"
 description = "A pytest plugin for colorful print statements"
-version = "0.0.5"
 authors = [{name = "Brian Okken"}]
 requires-python = ">=3.7"
 readme = "README.md"
 license = {file = "LICENSE"}
 dependencies = ["pytest"]
+dynamic = ["version"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Framework :: Pytest"
@@ -18,9 +18,8 @@ Home = "https://github.com/okken/pytest-crayons"
 [project.entry-points.pytest11]
 crayons = "pytest_crayons"
 
-[build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
 
-[tool.flit.module]
-name = "pytest_crayons"
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+
+[tool.setuptools_scm]
