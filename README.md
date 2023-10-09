@@ -15,7 +15,7 @@ pip install pytest-crayons
 
 ```python
 def test_magenta(magenta):
-    blue("this should be magenta")
+    magenta("this should be magenta")
 ```
 
 Just like normal print statements, you only see the output if:
