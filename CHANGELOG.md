@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.0.8
+
+### Changes
+
+- added `--no-crayons` to turn off colors
+
+### Internal Changes
+
+- hatchling for build backend
+- hardcoded versions (no longer dynamic)
+- update ruff command
+
 ## 0.0.7 
 
 ### Internal Changes
