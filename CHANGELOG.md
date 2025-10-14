@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.9
+
+### Changes
+
+- add testing for 3.14t (free threading)
+
 ## 0.0.8
 
 ### Changes
