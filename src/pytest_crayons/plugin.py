@@ -44,3 +44,17 @@ def magenta(request):
 @pytest.fixture()
 def cyan(request):
     return partial(_color_print, CYAN, request.node.name)
+
+def pytest_addoption(parser):
+    parser.addoption(
+        "--no-crayons", 
+        action="store_true", 
+        default=False, 
+        help="Disable crayons color printing")
+
+def pytest_configure(config):
+    if config.getoption("--no-crayons"):
+        global _color_print
+        def _normal_print(color: str, func_name: str, text: str):
+            print(text)
+        _color_print = _normal_print
