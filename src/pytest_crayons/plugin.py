@@ -11,9 +11,13 @@ CYAN = "\x1b[36m"
 RESET = "\x1b[0m"
 BOLD = "\x1b[1m"
 
+_crayons_enabled = True
 
 def _color_print(color: str, func_name: str, text: str):
-    print(f"{BOLD}{color}{func_name}: {text}{RESET}")
+    if _crayons_enabled:
+        print(f"{BOLD}{color}{func_name}: {text}{RESET}")
+    else:
+        print(text)
 
 
 @pytest.fixture()
@@ -54,7 +58,5 @@ def pytest_addoption(parser):
 
 def pytest_configure(config):
     if config.getoption("--no-crayons"):
-        global _color_print
-        def _normal_print(color: str, func_name: str, text: str):
-            print(text)
-        _color_print = _normal_print
+        global _crayons_enabled
+        _crayons_enabled = False
