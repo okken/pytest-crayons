@@ -18,6 +18,7 @@ classifiers = [
     'Programming Language :: Python :: 3.12',
     'Programming Language :: Python :: 3.13',
     'Programming Language :: Python :: 3.14',
+    'Programming Language :: Python :: 3.15',
     'Programming Language :: Python :: Free Threading',
     'Programming Language :: Python :: Free Threading :: 3 - Stable',
     'Topic :: Software Development :: Testing',
@@ -29,7 +30,6 @@ Home = "https://github.com/okken/pytest-crayons"
 
 [project.entry-points.pytest11]
 crayons = "pytest_crayons.plugin"
-
 
 [build-system]
 requires = ["hatchling"]

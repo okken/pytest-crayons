@@ -1,6 +1,10 @@
 # pytest-crayons
 
-A pytest plugin for colorful print statements.
+A pytest plugin for colorful print statements. 
+
+There isn't a serious need for the plugin functionality.  
+However, there is a need for examples of simple pytest plugins.  
+This is a simple plugin.
 
 ## Installation
 
