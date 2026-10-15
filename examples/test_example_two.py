@@ -1,3 +1,3 @@
 def test_magenta(magenta):
-    print("")
+    print()
     magenta("this should be magenta")

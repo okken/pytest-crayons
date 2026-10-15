@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1
+
+### Changes
+
+- Test against Python 3.15
+
 ## 0.0.9
 
 ### Changes
