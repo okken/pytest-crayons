@@ -1,5 +1,6 @@
-import pytest
 from functools import partial
+
+import pytest
 
 # Terminal color codes
 RED = "\x1b[31m"
