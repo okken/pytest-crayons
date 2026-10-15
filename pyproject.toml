@@ -6,7 +6,7 @@ requires-python = ">=3.9"
 readme = "README.md"
 license = {file = "LICENSE"}
 dependencies = ["pytest"]
-version = "0.0.9"
+version = "1.0.1"
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Framework :: Pytest",
